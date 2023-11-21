@@ -60,7 +60,7 @@ onMounted(() => {
 
   <main class ="app">
 
-  <h1 v-if="showWelcome">Hello</h1>
+  <h1 v-if="showhello">Hello</h1>
     <h1 v-else>Hi</h1>
     <button @click="celebrateWelcome" style="color: white; background-color: green;">Click</button>
     <hr>
@@ -113,9 +113,8 @@ onMounted(() => {
 export default {
   data() {
     return {
-      message: "We Love Web Sys Class.",
       count: 0,
-      showWelcome: true,
+      showhello: true,
       
     }
   },
@@ -128,7 +127,7 @@ export default {
       this.count += 1;
     },
     celebrateWelcome() {
-      this.showWelcome = false;
+      this.showhello = false;
     }
   }
 }
