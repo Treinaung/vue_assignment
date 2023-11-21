@@ -60,8 +60,8 @@ onMounted(() => {
 
   <main class ="app">
 
-  <h1 v-if="showWelcome">OK?</h1>
-    <h1 v-else>No</h1>
+  <h1 v-if="showWelcome">Hello</h1>
+    <h1 v-else>Hi</h1>
     <button @click="celebrateWelcome" style="color: white; background-color: green;">Click</button>
     <hr>
 
